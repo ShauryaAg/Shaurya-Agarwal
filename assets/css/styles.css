@@ -239,3 +239,29 @@ a:hover {
 .cert-links{
   color: black;
 }
+
+.project-btn{
+  color: white;
+  font-size: 3vh;
+}
+
+@keyframes move {
+  from {
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.07);
+  }
+}
+
+.project-btn{
+  min-width: 20vw;
+}
+
+.right-btn{
+  margin-left: 7px;
+  animation-name: move;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

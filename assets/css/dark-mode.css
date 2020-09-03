@@ -89,6 +89,11 @@
   color: white;
 }
 
+[data-theme="dark"] .project-btn{
+  color: black;
+  font-size: 3vh;
+}
+
 #header {
   height: 102vh;
 }
