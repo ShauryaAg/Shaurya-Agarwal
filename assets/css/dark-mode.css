@@ -85,6 +85,10 @@
   border-radius: 2em;
 }
 
+[data-theme="dark"] .cert-links{
+  color: white;
+}
+
 #header {
   height: 102vh;
 }
