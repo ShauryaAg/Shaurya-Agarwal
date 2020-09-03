@@ -224,6 +224,7 @@ html {
   zoom: 100%;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  background-color:  #F1F3F6;
 }
 
 .back-btn {
@@ -240,7 +241,7 @@ a:hover {
   color: black;
 }
 
-.project-btn{
+.project-btn *{
   color: black;
   font-size: 3vh;
 }
@@ -254,8 +255,17 @@ a:hover {
   }
 }
 
+.project-btn:hover{
+  background-color: #F1F3F6;
+  transition: box-shadow 0.5s ease;
+  box-shadow: inset -5px -5px 5px #FFFFFF, inset 5px 5px 5px rgba(55, 84, 170, 0.1);
+}
+
 .project-btn{
   min-width: 20vw;
+  background-color: #F1F3F6;
+  border: none;
+  box-shadow: -6px -6px 15px #FFFFFF, 6px 6px 15px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
 }
 
 .right-btn{
