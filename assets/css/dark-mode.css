@@ -107,6 +107,15 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35), -5px -5px 10px rgba(56, 56, 56, 0.3);
 }
 
+[data-theme="dark"] .neumo-shadow{
+  padding: 3vh  3vw;
+  border-radius: 0.5em;
+  background-color: #181818;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35), -5px -5px 10px rgba(56, 56, 56, 0.3);
+}
+
+
 #header {
   height: 102vh;
 }

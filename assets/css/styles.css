@@ -26,6 +26,7 @@
 .portfolio-block.cv .group {
   max-width: 800px;
   margin: auto;
+  margin-top: 5vh;
 }
 
 .portfolio-block.cv .group .item {
@@ -274,4 +275,12 @@ a:hover {
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+.neumo-shadow{
+  padding: 3vh  3vw;
+  background-color: #F1F3F6;
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: -6px -6px 15px #FFFFFF, 6px 6px 15px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
 }
