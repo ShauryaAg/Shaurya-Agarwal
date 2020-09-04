@@ -256,13 +256,13 @@ a:hover {
   }
 }
 
-.project-btn:hover{
+.neumo-btn:hover{
   background-color: #F1F3F6;
   transition: box-shadow 0.5s ease;
   box-shadow: inset -5px -5px 5px #FFFFFF, inset 5px 5px 5px rgba(55, 84, 170, 0.1);
 }
 
-.project-btn{
+.neumo-btn{
   min-width: 20vw;
   background-color: #F1F3F6;
   border: none;

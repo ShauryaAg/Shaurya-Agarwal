@@ -94,17 +94,21 @@
   font-size: 3vh;
 }
 
-[data-theme="dark"] .project-btn:hover{
+[data-theme="dark"] .neumo-btn:hover{
   background-color: #181818;
   transition: box-shadow 0.5s ease;
   box-shadow: inset -5px -5px 10px rgba(19, 26, 44, 0.26), inset 5px 5px 10px rgba(15, 14, 14, 0.7);
 }
 
-[data-theme="dark"] .project-btn{
+[data-theme="dark"] .neumo-btn{
   min-width: 20vw;
   background-color: #181818;
   border: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35), -5px -5px 10px rgba(56, 56, 56, 0.3);
+}
+
+[data-theme="dark"] .resume-btn {
+  color: white;
 }
 
 [data-theme="dark"] .neumo-shadow{
