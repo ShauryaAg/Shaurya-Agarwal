@@ -10,12 +10,12 @@ window.onload = async () => {
     closedContribs = []
     items.map((item) => {
         contrib = `
-        <div class="contrib-item card neumo-shadow mt-4 px-2">
+        <div class="contrib-item card neumo-shadow mt-4 px-4">
             <div class="contrib-title">
-                <b>Title:</b> <a href="${item["html_url"]}">${item["title"]}</a>
+                <b>Title:</b><a href="${item["html_url"]}"> ${item["title"]}</a>
             </div>
             <div class="contrib-no">
-                <b>PR Number:</b><span class="contrib-no">#${item["number"]}</span>
+                <b>PR Number:</b><span class="contrib-no"> #${item["number"]}</span>
             </div>
             <div class="contrib-repo">
                 <strong> Repo:</strong> <a href="${item["html_url"].split('pull')[0]}">${item["url"].split('repos/')[1].split('/issues')[0]}</a>
