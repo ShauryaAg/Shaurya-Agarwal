@@ -297,7 +297,7 @@ a:hover {
   color: white;
 }
 
-.contrib-title{
+.contrib-overflow{
   display: block;
   overflow: hidden;
   white-space: nowrap;

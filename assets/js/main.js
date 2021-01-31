@@ -11,22 +11,23 @@ window.onload = async () => {
     items.map((item) => {
         contrib = `
         <div class="contrib-item card neumo-shadow mt-4 px-4">
-            <div class="contrib-title">
+            <div class="contrib-title contrib-overflow">
                 <b>Title:</b><a href="${item["html_url"]}"> ${item["title"]}</a>
             </div>
             <div class="contrib-no">
                 <b>PR Number:</b><span class="contrib-no"> #${item["number"]}</span>
             </div>
-            <div class="contrib-repo">
+            <div class="contrib-repo contrib-overflow">
                 <strong> Repo:</strong> <a href="${item["html_url"].split('pull')[0]}">${item["url"].split('repos/')[1].split('/issues')[0]}</a>
             </div>
         </div>
     `
-        if (item.state == "open") {
-            openContribs.push(contrib)
-        } else {
-            closedContribs.push(contrib)
-        }
+        if (!(item["url"].includes("Hacktoberfest") || item["title"].includes("readme")))
+            if (item.state == "open") {
+                openContribs.push(contrib)
+            } else {
+                closedContribs.push(contrib)
+            }
     })
 
     openInnerHtml = openContribs.join("\r\n")
