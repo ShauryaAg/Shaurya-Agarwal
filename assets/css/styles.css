@@ -284,3 +284,48 @@ a:hover {
   border: none;
   box-shadow: -6px -6px 15px #FFFFFF, 6px 6px 15px rgba(0, 0, 0, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
 }
+
+.contrib-state{
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 2em;
+  color: white;
+}
+
+.contrib-title{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.open-state{
+  background-color: #28a745;
+}
+
+.closed-state{
+  background-color: #d73a49;
+}
+
+.merged-state{
+  background-color: #6f42c1;
+}
+
+.octicon{
+  display: inline-block;  
+  vertical-align: text-bottom;
+  fill: white;
+}
+
+.contrib-item{
+  font-family: 'Fira Code';
+}
+
+hr.solid{
+  border-top: 3px solid #bbb;
+}
