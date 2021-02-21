@@ -304,6 +304,15 @@ a:hover {
   text-overflow: ellipsis;
 }
 
+.label-name {
+  display: inline;
+  font-size: 12px;
+  padding: 0 7px;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  color: #FFFFFF;
+}
+
 .open-state{
   background-color: #28a745;
 }
