@@ -1,6 +1,5 @@
 window.onload = async () => {
-    const response = await fetch('https://api.github.com/search/issues?q=author%3AShauryaAg+type%3Apr').then(res => res.json())
-    console.log(response)
+    const response = await fetch('https://api.github.com/search/issues?q=author%3AShauryaAg+type%3Apr&per_page=100').then(res => res.json())
 
     const open = document.getElementById('open')
     const closed = document.getElementById('closed')
@@ -9,22 +8,20 @@ window.onload = async () => {
     openContribs = []
     closedContribs = []
     items.map((item) => {
-        console.log(item.labels)
         contrib = `
         <div class="contrib-item card neumo-shadow mt-4 px-4">
             <div class="contrib-title contrib-overflow">
                 <b>Title:</b><a href="${item["html_url"]}"> ${item["title"]}</a>
             </div>
             <div class="contrib-labels">
-            ${
-            item['labels'].map(label => {
-                return `
+            ${item['labels'].map(label => {
+            return `
                 <div class="label-name" style=background-color:#${label['color']}>
                 ${label['name']}
                 </div>
                 `
-            })
-    }
+        })
+            }
             </div >
             <div class="contrib-no">
                 <b>PR Number:</b><span class="contrib-no"> #${item["number"]}</span>
